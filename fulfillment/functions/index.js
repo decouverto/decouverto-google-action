@@ -3,8 +3,7 @@
 'use strict';
  
 const functions = require('firebase-functions');
-const {WebhookClient} = require('dialogflow-fulfillment');
-const {Card, Suggestion} = require('dialogflow-fulfillment');
+const {WebhookClient, Card} = require('dialogflow-fulfillment');
 const request = require('sync-request');
 const walks = JSON.parse(request('GET', 'https://decouverto.fr/walks/index.json').getBody('utf8'));
  
